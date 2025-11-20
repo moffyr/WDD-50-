@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  text-align: center;
+}
+.p3b_section1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  min-width: 50%;
+}
