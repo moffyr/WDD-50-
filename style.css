@@ -1,5 +1,5 @@
 /* Modifying default styling */
-.rm * {
+.rm *, {
   /* for predictable sizing */
   box-sizing: border-box;
   /* Removes all default browser margin and padding */
@@ -47,7 +47,7 @@
 }
 
 /*styling page layout*/
-.rm .textCenter {
+.rm .textCenter,.rm0 .textCenter {
   text-align: center;
 }
 
@@ -108,6 +108,7 @@
   margin-bottom: 5px;
 }
 
+
 /* form styling */
 .rm form{
   padding: 10px;
@@ -138,13 +139,12 @@
 }
 
 .rm button {
-    /* Core button appearance and spacing */
     padding: 10px 20px;
-    border: none; /* Removes default button border */
+    border: none; 
     border-radius: 8px;
-    cursor: pointer; /* Provides visual feedback that the element is clickable */
+    cursor: pointer; 
     font-weight: bold;
-    display: block; /* Can be useful to make button take full available width */
+    display: block; 
 }
 
 .rm button:hover {
@@ -167,4 +167,28 @@
   .rm .section1 {
     flex-direction: column-reverse;
   }
+}
+
+/*styling the index page*/
+.rm0:not(nav) {
+  box-sizing: border-box;
+  padding: 10px;
+}
+.rm0 header{
+  height: 375px;
+  position: relative
+  
+}
+.rm0 header h1{
+  position: absolute;
+  top: 50%;
+  width: 100% 
+}
+
+
+.rm0 .homeGrid{
+  margin-bottom: 20px;
+}
+.rm0 .homeGrid .card{
+  margin-bottom: 10px;
 }
