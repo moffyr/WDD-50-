@@ -63,7 +63,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 15px;
+  gap: 5px;
 }
 
 .rm .flexgap {
@@ -110,9 +110,13 @@
 
 /* form styling */
 .rm form{
-  display: flex;
-  flex-direction: column;
+  padding: 10px;
 }
+
+.rm form *{
+  width: 100%;
+}
+
 .rm input[type="text"],
 .rm input[type="date"],
 .rm input[type="radio"],
@@ -155,10 +159,12 @@
     gap: 5px;
     flex-grow: 1;
   }
-  .rm .flexrow * {
-    width: 100%;
-    align-self: center;
+  .rm .flexrow *{
+    width: 98%;
     padding: auto;
     margin: auto;
+  }
+  .rm .section1 {
+    flex-direction: column-reverse;
   }
 }
