@@ -6,13 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="p3-1_pagewrapper">
-      <header>
+  <body class="rm">
+    <div class="pagewrapper">
+      <header class="flexcenter">
         <h1>TITLE</h1>
         <p>a bit about the title and rhe pages content</p>
       </header>
-      <section class="p3b_section1">
+      <section class="section1 flexrow">
         <div>
           <h2>Heading</h2>
           <p>
@@ -32,101 +32,125 @@
           alt="placeholder image"
         />
       </section>
-      <section>
-        <div>
+      <section class="section2">
+        <div class="flexrow">
           <img
-            src="https://placehold.co/400"
+            src="https://placehold.co/600x400"
             width="50%"
             alt="placeholder image"
           />
-          <h2>Heading</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
-            facere hic tempore consequatur magni modi fugit rem, omnis mollitia
-            delectus dolore fugiat quis suscipit aliquid obcaecati, pariatur
-            eligendi. Quae, illum!
-          </p>
+          <div>
+            <h2>Heading</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+              facere hic tempore consequatur magni modi fugit rem, omnis
+              mollitia delectus dolore fugiat quis suscipit aliquid obcaecati,
+              pariatur eligendi. Quae, illum!
+            </p>
+          </div>
         </div>
-        <div>
+        <div class="flexrow">
           <img
-            src="https://placehold.co/400"
+            src="https://placehold.co/600x400"
             width="50%"
             alt="placeholder image"
           />
-          <h2>Heading</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
-            facere hic tempore consequatur magni modi fugit rem, omnis mollitia
-            delectus dolore fugiat quis suscipit aliquid obcaecati, pariatur
-            eligendi. Quae, illum!
-          </p>
+          <div>
+            <h2>Heading</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+              facere hic tempore consequatur magni modi fugit rem, omnis
+              mollitia delectus dolore fugiat quis suscipit aliquid obcaecati,
+              pariatur eligendi. Quae, illum!
+            </p>
+          </div>
         </div>
-        <div>
+        <div class="flexrow">
           <img
-            src="https://placehold.co/400"
+            src="https://placehold.co/600x400"
             width="50%"
             alt="placeholder image"
           />
-          <h2>Heading</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
-            facere hic tempore consequatur magni modi fugit rem, omnis mollitia
-            delectus dolore fugiat quis suscipit aliquid obcaecati, pariatur
-            eligendi. Quae, illum!
-          </p>
+          <div>
+            <h2>Heading</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+              facere hic tempore consequatur magni modi fugit rem, omnis
+              mollitia delectus dolore fugiat quis suscipit aliquid obcaecati,
+              pariatur eligendi. Quae, illum!
+            </p>
+          </div>
         </div>
       </section>
-      <section>
-        <h2>HEADING</h2>
-        <div>
-          <h3>heading</h3>
-          <p>a bit of text</p>
-          <ul>
-            <li>list</li>
-            <li>list</li>
-          </ul>
-        </div>
-        <div>
-          <h3>heading</h3>
-          <p>a bit of text</p>
-          <ul>
-            <li>list</li>
-            <li>list</li>
-          </ul>
-        </div>
-        <div>
-          <h3>heading</h3>
-          <p>a bit of text</p>
-          <ul>
-            <li>list</li>
-            <li>list</li>
-          </ul>
+      <section class="section3">
+        <h2 class="textCenter">HEADING</h2>
+        <div class="flexrow">
+          <div class="card">
+            <h3>heading</h3>
+            <p>a bit of text</p>
+            <ul>
+              <li>list</li>
+              <li>list</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>heading</h3>
+            <p>a bit of text</p>
+            <ul>
+              <li>list</li>
+              <li>list</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>heading</h3>
+            <p>a bit of text</p>
+            <ul>
+              <li>list</li>
+              <li>list</li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section>
-        <div>
-          <h2>HEADING</h2>
-          <p>a bit of text</p>
-          <ul>
-            <li>a bit more text</li>
-            <li>a bit more text</li>
-            <li>a bit more text</li>
-          </ul>
-          <h2>HEADING</h2>
-          <p>a bit of text</p>
+      <section class="section4 flexrow">
+        <div class="flexcol flexgap">
+          <div>
+            <h2>HEADING</h2>
+            <p>a bit of text</p>
+            <ul>
+              <li>a bit more text</li>
+              <li>a bit more text</li>
+              <li>a bit more text</li>
+            </ul>
+          </div>
+          <div>
+            <h2>HEADING</h2>
+            <p>a bit of text</p>
+          </div>
         </div>
         <div>
-          <h1>HEADING</h1>
+          <h2>HEADING</h2>
           <p>a bit of text</p>
           <form action="">
             <label for="firstName">Full Name:</label>
             <input type="text" id="fullName" />
             <label for="birthDate">Birthdate:</label>
             <input type="date" id="birthDate" />
-            <label for="gender">Gender:</label>
-            <input type="radio" id="gender" />
-            <label for="smth">lorem Ipsum:</label>
-            <input type="text" id="smth" />
+            <fieldset>
+              <legend>Gender:</legend>
+              <div>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">male</label>
+              </div>
+              <div>
+                <input type="radio" id="male" name="gender" value="female" />
+                <label for="female">female</label>
+              </div>
+              <div>
+                <input type="radio" id="other" name="gender" value="other" />
+                <label for="male">other</label>
+              </div>
+            </fieldset>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </section>
