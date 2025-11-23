@@ -1,5 +1,5 @@
 /* Modifying default styling */
-.rm *, {
+.rm * {
   /* for predictable sizing */
   box-sizing: border-box;
   /* Removes all default browser margin and padding */
@@ -42,7 +42,6 @@
 }
 
 .rm ul {
-  list-style-type: disc;
   padding-left: 20px;
 }
 
@@ -71,7 +70,7 @@
   gap: 20px;
 }
 
-.rm .flexcenter {
+.rm .flexcenter, .rm0 .flexcenter {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,9 +90,20 @@
   margin-bottom: 5px;
 }
 
-/* styling header */
-.rm header {
-  height: 200px;
+
+/*styling header*/
+.rm header, .rm0 header{
+  height: 375px;
+  position: relative
+}
+.rm header>div , .rm0 header h1{
+  position: absolute;
+  top: 50%;
+  width: 100% 
+}
+
+.rm header ul, .rm0 header ul{
+  list-style-type: none;
 }
 
 
@@ -174,16 +184,7 @@
   box-sizing: border-box;
   padding: 10px;
 }
-.rm0 header{
-  height: 375px;
-  position: relative
-  
-}
-.rm0 header h1{
-  position: absolute;
-  top: 50%;
-  width: 100% 
-}
+
 
 
 .rm0 .homeGrid{

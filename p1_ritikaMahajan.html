@@ -1,16 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+			<!-- Meta Tags -->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="author" content="Ritika Mahajan">
+            <meta name="description" content="description">
+
+			<title>Ohome | Water Efficiency and Scarcity</title>
+			
+            <!-- Bootstrap v5.3.8 -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+            
+            <!-- Google Fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+            
+            <!-- link to group css -->
+            <link rel="stylesheet" href="style.css">
+		</head>
   <body class="rm">
     <div class="pagewrapper">
-      <header class="flexcenter">
+      <header class="">
+          <nav class="navbar navbar-expand-lg">
+            <!-- container-fluid makes the navbar responsive -->
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">〇home</a>
+              <!-- data-bs-toggle and data-bs-target specify the id of the element to toggle -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- navbar-toggler toggles navbar on small screens -->
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!-- The navbar-nav class is used to specify the list of navigation items -->
+                <ul class="navbar-nav">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">​Access & Services</a>
+                  <!-- aria-expanded is used to specify if dropdown is expanded or not -->
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Safe Drinking Water</a></li>
+                  <li><a class="dropdown-item" href="#">Sanitation & Hygiene</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">​Environmental Protection</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="shourya page 1.html">Water Quality & Wastewater Treatment</a></li>
+                  <li><a class="dropdown-item" href="shourya page 2.html">Water Ecosystems</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">​Resource Management</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="p1_ritikaMahajan.html">Water Efficiency & Scarcity</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Support & Implementation</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="szymonPageOne.html">International Cooperation</a></li>
+                    <li><a class="dropdown-item" href="szymonPageTwo.html">Local Community Participation</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="flexcenter">
         <h1>TITLE</h1>
         <p>a bit about the title and rhe pages content</p>
+        </div>
       </header>
       <section class="section1 flexrow">
         <div>
@@ -155,5 +214,6 @@
         </div>
       </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
