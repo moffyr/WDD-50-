@@ -57,6 +57,7 @@
 
 .rm section, .rm0 section {
   padding: 10px;
+  height:min-content;
 }
 
 .rm h1,.rm h2,.rm h3,.rm p {
@@ -100,7 +101,7 @@
 
 .rm section:nth-child(odd) {
   background-color: var(--clr-mint-cream);
-  color: var(--clr-charcoal-2);
+  color: rgb(76, 101, 115);
 
 }
 
@@ -110,12 +111,8 @@
   font-weight: 900;
 }
 
-.rm p {
-    color: ;
-}
-
 .rm img {
-  min-width: 30%;
+  width: 200px;
   margin: 10px;
   border-radius: 5px;
 }
@@ -169,7 +166,7 @@
   margin-bottom: 5px;
 }
 .rm .card h3 + p {
-  color:#553a2b;
+  color: #795742;
 }
 
 
@@ -193,7 +190,7 @@
 }
 
 .rm header p{
-  color:#553a2b;
+  color:#795742;
   text-shadow: rgb(255, 255, 255) 8px -1px 10px;
 }
 
@@ -201,10 +198,14 @@
   list-style-type: none;
 }
 
+
 /* section 3 styling */
 .rm .section3 > div > div {
   background-color: var(--clr-mint-cream);
-  color: var(--clr-charcoal);
+  color: rgb(76, 101, 115);
+}
+.rm .cardContainer{
+  align-items: stretch;
 }
 
 /* section 4 styling */
@@ -216,10 +217,6 @@
 
 .rm .section4 h2 {
   margin-bottom: 5px;
-}
-
-.rm .section4 h2 + p {
-  color:#553a2b;
 }
 
 
@@ -248,7 +245,7 @@
 .rm input:focus {
   /* redefining default behaviour on focus*/
     outline: none; 
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 5px var(--clr-slate-gray);
 }
 
 .rm button {
@@ -262,7 +259,7 @@
 }
 
 .rm button:hover {
-    background-color: #0056b3;
+    background-color: var(--clr-slate-gray);
 }
 
 /* defining media queries */
