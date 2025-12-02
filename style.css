@@ -85,6 +85,12 @@
     font-weight: 600; */
 }
 
+.rm small{
+  display: block;
+  color: red;
+}
+
+
 .rm header:not(.rm nav) {
   /* image contribution: <a href="https://www.freepik.com/free-photo/closeup-shot-peaceful-calming-textures-body-water_7810332.htm#fromView=keyword&page=1&position=10&uuid=3f4375fa-59e0-43be-ae66-0da32b540f98&query=Water">Image by wirestock on Freepik</a> */  
     background-image: url('media/water-texture-background-transparent-liquid.jpg');
