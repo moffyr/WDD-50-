@@ -1,50 +1,48 @@
+/* RITIKA */
 /*GENERAL STYLES*/
-*{
-	box-sizing: border-box;
-	font-size: 16px;
+* {
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 /* google fonts */
-.dynapuff-header { /* use this for headers -  add new class if changing weight/style */
+.dynapuff-header {
+  /* use this for headers -  add new class if changing weight/style */
   font-family: "DynaPuff", system-ui;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
-.truculenta-body { /* use this for body -  add new class if changing weight/style */
+.truculenta-body {
+  /* use this for body -  add new class if changing weight/style */
   font-family: "Truculenta", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
-/* Colour Scheme Darkest to Lightest */ 
+/* Colour Scheme Darkest to Lightest */
 :root {
-    /* created variables of colours - use var(variablename) isntead of hexcode in classes - e.g. color: var(--clr-slate-gray) */
-    --clr-charcoal: #243c4cff;
-    --clr-charcoal-2: #2c444cff;
-    --clr-air-force-blue: #5289adff;
-    --clr-slate-gray: #698696ff;
-    --clr-ash-gray: #acbcbfff;
-    --clr-mint-cream: #f4fcfbff;
+  /* created variables of colours - use var(variablename) isntead of hexcode in classes - e.g. color: var(--clr-slate-gray) */
+  --clr-charcoal: #243c4cff;
+  --clr-charcoal-2: #2c444cff;
+  --clr-air-force-blue: #5289adff;
+  --clr-slate-gray: #698696ff;
+  --clr-ash-gray: #acbcbfff;
+  --clr-mint-cream: #f4fcfbff;
 }
-
 
 /* Modifying default styling */
-/* .rm .pagewrapper:not(nav) *{
+.rm .pagewrapper:not(nav) * {
   /* for predictable sizing */
   box-sizing: border-box;
   /* Removes all default browser margin and padding */
   margin: 0;
   padding: 0;
 }
-
-
 
 /* styling body with class rm */
 .rm {
@@ -55,62 +53,61 @@
   align-items: center;
 }
 
-.rm section, .rm0 section {
+.rm section,
+.rm0 section {
   padding: 10px;
-  height:min-content;
+  height: min-content;
 }
 
-.rm h1,.rm h2,.rm h3,.rm p {
-    /* Consistent bottom margins/spacing */
-    margin-bottom: 20px; 
+.rm h1,
+.rm h2,
+.rm h3,
+.rm p {
+  /* Consistent bottom margins/spacing */
+  margin-bottom: 20px;
 
-    /* Ensure default font behavior */
-    font-size: 1rem; /* Adjust as needed */
-    font-weight: bold;
-    line-height: 1.5;
+  /* Ensure default font behavior */
+  font-size: 1rem; /* Adjust as needed */
+  font-weight: bold;
+  line-height: 1.5;
 }
 
-.rm h1, .rm h2, .rm h3, .rm header p {
-    font-family: "DynaPuff", system-ui;
-    letter-spacing: 0.1rem;
+.rm h1,
+.rm h2,
+.rm h3,
+.rm header p {
+  font-family: "DynaPuff", system-ui;
+  letter-spacing: 0.1rem;
 }
 
-.rm p, .rm li, .rm h1 {
+.rm p,
+.rm li,
+.rm h1 {
   font-family: "Truculenta", sans-serif;
-  /* image contribution: <a href="https://www.freepik.com/free-photo/closeup-shot-peaceful-calming-textures-body-water_7810332.htm#fromView=keyword&page=1&position=10&uuid=3f4375fa-59e0-43be-ae66-0da32b540f98&query=Water">Image by wirestock on Freepik</a> */
-    /* background-image: url('media/closeup-shot-peaceful-calming-textures-body-water_bg.jpg');
-    color: transparent;
-    background-size: cover;
-    background-clip: text;
-    font-weight: 600; */
 }
 
-.rm small{
+.rm small {
   display: block;
   color: red;
 }
 
-
 .rm header:not(.rm nav) {
-  /* image contribution: <a href="https://www.freepik.com/free-photo/closeup-shot-peaceful-calming-textures-body-water_7810332.htm#fromView=keyword&page=1&position=10&uuid=3f4375fa-59e0-43be-ae66-0da32b540f98&query=Water">Image by wirestock on Freepik</a> */  
-    background-image: url('media/water-texture-background-transparent-liquid.jpg');
-    height: 100vh;
-    background-position: 100vmax;
-    background-size: cover;
+  /* image contribution: <a href="https://www.freepik.com/free-photo/closeup-shot-peaceful-calming-textures-body-water_7810332.htm#fromView=keyword&page=1&position=10&uuid=3f4375fa-59e0-43be-ae66-0da32b540f98&query=Water">Image by wirestock on Freepik</a> */
+  background-image: url("media/rm_water-texture-background-transparent-liquid.jpg");
+  height: 100vh;
+  background-position: 100vmax;
+  background-size: cover;
 }
 
 .rm section:nth-child(even) {
   background-color: var(--clr-slate-gray);
   color: var(--clr-mint-cream);
-
 }
 
 .rm section:nth-child(odd) {
   background-color: var(--clr-mint-cream);
   color: rgb(76, 101, 115);
-
 }
-
 
 .rm h1 {
   font-size: 5rem;
@@ -128,7 +125,8 @@
 }
 
 /*styling page layout*/
-.rm .textCenter,.rm0 .textCenter {
+.rm .textCenter,
+.rm0 .textCenter {
   text-align: center;
 }
 
@@ -152,7 +150,8 @@
   gap: 20px;
 }
 
-.rm .flexcenter, .rm0 .flexcenter {
+.rm .flexcenter,
+.rm0 .flexcenter {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,10 +159,10 @@
 }
 
 .rm .card {
-  border: 1px solid #ccc; 
-  border-radius: 8px; 
-  padding: 15px; 
-  flex: 1; 
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  flex: 1;
   margin: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -175,42 +174,43 @@
   color: #795742;
 }
 
-
 /*styling header*/
-.rm header{
+.rm header {
   color: var(--clr-charcoal);
   text-align: center;
 }
-.rm header, .rm0 header{
+.rm header,
+.rm0 header {
   height: 100vh;
-  position: relative
+  position: relative;
 }
-.rm header>div , .rm0 header h1{
+.rm header > div,
+.rm0 header h1 {
   position: absolute;
   top: 31%;
-  width: 100% 
+  width: 100%;
 }
-.rm header h1{
+.rm header h1 {
   margin-bottom: 10%;
   text-shadow: rgb(255, 255, 255) 0px 0px 3px;
 }
 
-.rm header p{
-  color:#795742;
+.rm header p {
+  color: #795742;
   text-shadow: rgb(255, 255, 255) 8px -1px 10px;
 }
 
-.rm header ul, .rm0 header ul{
+.rm header ul,
+.rm0 header ul {
   list-style-type: none;
 }
-
 
 /* section 3 styling */
 .rm .section3 > div > div {
   background-color: var(--clr-mint-cream);
   color: rgb(76, 101, 115);
 }
-.rm .cardContainer{
+.rm .cardContainer {
   align-items: stretch;
 }
 
@@ -225,47 +225,46 @@
   margin-bottom: 5px;
 }
 
-
 /* form styling */
-.rm form{
+.rm form {
   padding: 10px;
 }
 
-.rm form *{
+.rm form * {
   width: 100%;
 }
 
 .rm input[type="text"],
 .rm input[type="date"],
 .rm button {
-    border: 1px solid #ccc; 
+  border: 1px solid #ccc;
 }
 
 .rm input,
 .rm fieldset {
-    padding: 10px 15px; 
-    border-radius: 5px; 
-    margin-bottom: 15px; 
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 .rm input:focus {
   /* redefining default behaviour on focus*/
-    outline: none; 
-    box-shadow: 0 0 5px var(--clr-slate-gray);
+  outline: none;
+  box-shadow: 0 0 5px var(--clr-slate-gray);
 }
 
 .rm button {
-    padding: 10px 20px;
-    border: none; 
-    border-radius: 8px;
-    cursor: pointer; 
-    font-weight: bold;
-    display: block; 
-    transition: background-color 0.3s ease-in-out;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .rm button:hover {
-    background-color: var(--clr-slate-gray);
+  background-color: var(--clr-slate-gray);
 }
 
 /* defining media queries */
@@ -276,7 +275,7 @@
     gap: 5px;
     flex-grow: 1;
   }
-  .rm .flexrow *{
+  .rm .flexrow * {
     width: 98%;
     padding: auto;
     margin: auto;
@@ -289,27 +288,20 @@
 /*styling the index page*/
 .rm0 {
   background-color: rgb(142, 173, 205);
-  background-image: url('media/blue-background-water-ripple-texture.jpg');
+  background-image: url("rm_media/blue-background-water-ripple-texture.jpg");
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
   font-family: "Truculenta", sans-serif;
   color: var(--clr-mint-cream);
-
 }
 .rm0 .sources {
   background-color: rgba(142, 174, 205, 0.34);
 }
 
-
-.rm0 header > h1, .rm0 h2, .rm0 h5{
-  /* image contribution: <a href="https://www.freepik.com/free-photo/closeup-shot-peaceful-calming-textures-body-water_7810332.htm#fromView=keyword&page=1&position=10&uuid=3f4375fa-59e0-43be-ae66-0da32b540f98&query=Water">Image by wirestock on Freepik</a>
-  background-color: rgb(142, 173, 205);
-  background-image: url('media/blue-background-water-ripple-texture.jpg');
-  background-blend-mode: multiply;
-  color: transparent;
-  background-size: cover;
-  background-clip: text; */
+.rm0 header > h1,
+.rm0 h2,
+.rm0 h5 {
   color: var(--clr-mint-cream);
 }
 
@@ -320,27 +312,29 @@
 .rm0 header {
   height: 75vh;
 }
-.rm0 h1{
+.rm0 h1 {
   margin-top: 8%;
 }
-.rm0 h1, .rm0 h2, .rm0 h5 {
+.rm0 h1,
+.rm0 h2,
+.rm0 h5 {
   font-family: "DynaPuff", system-ui;
 }
-.rm0 li{
+.rm0 li {
   color: var(--clr-mint-cream);
 }
 
 .rm0:not(nav) {
   box-sizing: border-box;
 }
-.rm0 .homeGrid{
+.rm0 .homeGrid {
   padding-bottom: 20px;
 }
-.rm0 .homeGrid .card{
+.rm0 .homeGrid .card {
   margin-bottom: 10px;
   background-color: rgba(142, 174, 205, 0.34);
   color: var(--clr-mint-cream);
 }
-.rm0 .card a{
+.rm0 .card a {
   color: var(--clr-mint-cream);
 }
