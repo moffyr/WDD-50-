@@ -226,12 +226,6 @@ use rem unit for any text size(good for responsiveness)
 .rm .navbar-nav, .rm .dropdown-menu {
   background-color: var(--clr-mint-cream);
 }
-
-.rm0 .navbar-nav, .rm0 .dropdown-menu {
-  background-color: var(--clr-air-force-blue);
-}
-
-
 .rm header > div,
 .rm0 header h1 {
   position: absolute;
@@ -345,6 +339,9 @@ use rem unit for any text size(good for responsiveness)
 }
 .rm0 .sources {
   background-color: rgba(142, 174, 205, 0.34);
+}
+.rm0 nav {
+  background-color: #6893bedc;
 }
 
 .rm0 header > h1,
